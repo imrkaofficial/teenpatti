@@ -50,6 +50,10 @@ body {
   font-family: var(--default-font);
 }
 
+.text-italic  { 
+  font-style: italic;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -649,12 +653,12 @@ h6 {
 --------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   right: 15px;
-  bottom: -15px;
+  bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #338f1d;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -672,11 +676,11 @@ h6 {
   color: var(--contrast-color);
 }
 
-.scroll-top.active {
+/* .scroll-top.active {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -832,7 +836,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: var(--background-color);
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -1747,12 +1751,13 @@ section,
 # About Section Titles
 --------------------------------------------------------------*/
 .aboutpage-section {
-  /* text-align: center; */
-  /* padding-bottom: 60px; */
   position: relative;
 }
 
 .red-color strong {
+  color: #cf2e2e;
+}
+.aboutpage-section .heighlight-color p{
   color: #cf2e2e;
 }
 
